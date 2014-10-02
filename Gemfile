@@ -23,3 +23,11 @@ end
 group :test do
   gem 'shoulda-matchers'
 end
+
+group :test, :development do 
+	gem 'dotenv-rails'
+end
+
+group :production do
+  gem 'rails_12factor'
+end

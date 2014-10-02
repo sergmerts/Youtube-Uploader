@@ -1,0 +1,7 @@
+development:
+  adapter: postgresql
+  database: krokodil_development
+
+test:
+  adapter: postgresql
+  database: krokodil_test

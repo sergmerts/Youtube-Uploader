@@ -8,6 +8,7 @@ gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'bootstrap-sass'
+gem 'omniauth-google-oauth2'
 
 group :development do
   gem 'better_errors'

@@ -9,6 +9,8 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'bootstrap-sass'
 gem 'omniauth-google-oauth2'
+gem 'youtube_it', github: 'bodrovis/youtube_it'
+
 
 group :development do
   gem 'better_errors'

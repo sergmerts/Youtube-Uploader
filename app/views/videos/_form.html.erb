@@ -8,13 +8,12 @@
     <%= text_area_tag :description, @pre_upload_info[:description], required: true,
                       placeholder: 'Description', class: 'form-control' %>
   </div>
-
-  <div class="form-group">
-    <%= text_field_tag :answer, required: true,
-                       placeholder: 'Answer for the puzzle', class: 'form-control' %>
-  </div>
 <% end %>
  
+<div class="form-group">
+  <%= f.text_field :answer,class: 'form-control', placeholder: "Answer for the puzzle" %>
+</div>
+
 <%= form_tag '', id: 'video_upload', multipart: true do %>
   <%= hidden_field_tag :token, '' %>
  
@@ -22,6 +21,8 @@
     <%= file_field_tag :file, required: true %>
   </div>
 <% end %>
+
+
  
 <button id="submit_pre_upload_form" class="btn btn-lg btn-primary">Upload</button>
 <%= image_tag 'ajax-loader.gif', class: 'preloader', alt: 'Uploading...', title: 'Uploading...' %>

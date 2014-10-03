@@ -19,10 +19,14 @@ class VideosController < ApplicationController
     yt_video = youtube.video_by(video_uid)
     v.title = yt_video.title
     v.description = yt_video.description
-    v.save
-    answer = params[:answer]
-    flash[:success] = 'Thanks for sharing your video!'
-    redirect_to root_url
+    v.title = params[:answer]
+    if v.save
+      flash[:success] = 'Thanks for sharing your video!'
+      redirect_to root_url
+    else
+      flash[:alert] = 'Something went wrong!'
+      render :new
+    end
   end
 
   def get_upload_token

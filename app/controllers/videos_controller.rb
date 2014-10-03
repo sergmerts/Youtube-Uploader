@@ -5,6 +5,11 @@ class VideosController < ApplicationController
 
   def index
     @videos = Video.all
+    @videos = Video.order('created_at DESC')
+  end
+
+  def show 
+    @video = Video.find(params[:id])
   end
 
   def get_video_uid

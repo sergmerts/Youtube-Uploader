@@ -12,10 +12,8 @@
   <% @videos.each do |video| %>
     <li class="col-sm-3">
       <div class="thumbnail">
-        <%= link_to image_tag("https://img.youtube.com/vi/#{video.uid}/mqdefault.jpg", alt: video.title,
-                              class: 'img-rounded'),
-                    "https://www.youtube.com/watch?v=#{video.uid}", target: '_blank' %>
- 
+        <%= link_to image_tag("https://img.youtube.com/vi/#{video.uid}/mqdefault.jpg", alt: video.title, class: 'img-rounded'), video_path(video) , target: '_blank' %>
+        
         <div class="caption">
           <h4><%= video.title %></h4>
           <p><%= truncate video.description, length: 100 %></p>

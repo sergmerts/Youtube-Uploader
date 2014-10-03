@@ -14,9 +14,9 @@
 <%= form_tag '', id: 'video_upload', multipart: true do %>
   <%= hidden_field_tag :token, '' %>
   <div class="form-group">
-    <%= text_field_tag :answer, required: true, placeholder: 'Answer for the puzzle', class: 'form-control' %>
+    <%= text_field_tag :answer, params[:answer], required: true, placeholder: 'Answer for the puzzle', class: 'form-control' %>
   </div>
-   
+
   <div class="form-group">
     <%= file_field_tag :file, required: true %>
   </div>

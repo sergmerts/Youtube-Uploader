@@ -19,8 +19,8 @@ class VideosController < ApplicationController
     yt_video = youtube.video_by(video_uid)
     v.title = yt_video.title
     v.description = yt_video.description
-    answer = params[:answer]
     v.save
+    answer = params[:answer]
     flash[:success] = 'Thanks for sharing your video!'
     redirect_to root_url
   end

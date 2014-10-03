@@ -25,7 +25,7 @@ class VideosController < ApplicationController
   end
 
   def get_upload_token
-    temp_params = { title: params[:title], description: params[:description], category: 'Education',
+    temp_params = { title: params[:title], description: params[:description], answer: params[:answer], category: 'Education',
                     keywords: [] }
 
     if current_user

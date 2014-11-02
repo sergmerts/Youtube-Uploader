@@ -8,23 +8,23 @@ For this project I'm using google_oauth2 strategy. You need to obtain __the clie
 
 Register your app using Google Console:
 
-Visit [console.developers.google.com](https://console.developers.google.com/)
+2. Visit [console.developers.google.com](https://console.developers.google.com/)
 
-Click __Create Project__, and enter your project's name.
+3. Click __Create Project__, and enter your project's name.
 
-After it has been created, open the __Consent Screen__ page (from the left menu) and fill in the __Product Name__, for example ("Youtube Uploader"). Don't forget to click __Save__.
+4. After it has been created, open the __Consent Screen__ page (from the left menu) and fill in the __Product Name__, for example ("Youtube Uploader"). Don't forget to click __Save__.
 
-Open up the __APIs__ page. Enable the __Google+ API__ and the __YouTube Data API v3__.
+5. Open up the __APIs__ page. Enable the __Google+ API__ and the __YouTube Data API v3__.
 
-Open the __Credentials__ page and click the __Create new Client ID__ button.
+6. Open the __Credentials__ page and click the __Create new Client ID__ button.
 
-In the popup window choose __Web application__.
+7. In the popup window choose __Web application__.
 
-For the __Authorized JavaScript origins__, enter your app's URL.
+8. For the __Authorized JavaScript origins__, enter your app's URL.
 
-In the __Authorized redirect URI__, enter your app’s URL plus __/auth/google_oauth2/callback__.
+9. In the __Authorized redirect URI__, enter your app’s URL plus __/auth/google_oauth2/callback__.
 
-Click __Create Client ID__ and you will see a newly created Client ID for web application. You will need to paste the values of __Client ID__ and __Client Secret__ into the omniauth.rb initializer.
+10. Click __Create Client ID__ and you will see a newly created Client ID for web application. You will need to paste the values of __Client ID__ and __Client Secret__ into the omniauth.rb initializer.
 
 Clone this repository in your terminal:
 

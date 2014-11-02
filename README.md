@@ -46,7 +46,7 @@ $ rake db:create db:migrate
 
 Create .env file in the root folder and set __GOOGLE_CLIENT_ID__, __GOOGLE_CLIENT_SECRET__, __GOOGLE_DEV_KEY__ to the keys you've got from google developer console.
 
-__VERY IMPORTANT__
+##__VERY IMPORTANT__
 
 Don't forget to ignore the __.env__ file in __.gitignore__
 

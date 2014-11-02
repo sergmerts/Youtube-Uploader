@@ -37,6 +37,7 @@
         dataType: 'json',
         success: function(response) {
           video_upload.find('#token').val(response.token);
+          console.log(window.location.protocol)
           video_upload.attr('action', response.url.replace(/^http:/i, window.location.protocol)).submit();
           submit_button.unbind('click').hide();
           $('.preloader').css('display', 'block');

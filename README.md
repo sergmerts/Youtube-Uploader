@@ -29,7 +29,7 @@ Register your app using Google Console:
 Clone this repository in your terminal:
 
 ```console
-$ git clone https://github.com/Mind1992/Krokodil.git
+$ git clone https://github.com/Mind1992/Youtube-Uploader.git
 ```
 
 Run bundle to install all the needed gems:
